@@ -1,0 +1,314 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: #e5e5e5;
+  color: #333333;
+}
+
+/***********************
+
+    GENERAL SETUP
+
+************************/
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1250px !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1700px !important;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .container {
+    max-width: 2100px !important;
+  }
+}
+
+.txt-blaq {
+  color: #333333;
+}
+
+.bg-blaq {
+  background: #333333;
+}
+
+.txt-green {
+  color: #219653;
+}
+
+.bg-green {
+  background: #219653;
+}
+
+.bg-dark-green {
+  background: #008080;
+}
+
+.txt-red {
+  color: #db261b;
+}
+
+.bg-red {
+  background: #db261b;
+}
+
+.txt-blue {
+  color: #2f80ed;
+}
+
+.link-dark {
+  color: #333333;
+}
+
+.link-dark:hover {
+  text-decoration: none;
+  color: #008080;
+}
+
+/***********************
+
+    HEADER
+
+************************/
+.header {
+  background: white;
+}
+
+.header .navbar-brand img {
+  height: 50px;
+}
+
+.header .navbar-brand .ri-logo {
+  width: 50px;
+}
+
+/***********************
+
+    MENU
+
+************************/
+.menu {
+  position: relative;
+}
+
+.menu a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+
+.menu .menu__bar > a.active {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.menu .menu__bar > a:hover, .menu .menu__bar > a:focus,
+.menu .dropdown:hover,
+.menu .dropdown:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.menu .dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.menu .abs {
+  position: fixed;
+  left: 0;
+  z-index: 10;
+  top: 82px;
+}
+
+@media screen and (max-width: 991px) {
+  .menu .p-abs {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    z-index: 5;
+    overflow: hidden;
+    background: #fff;
+    padding: 20px 0;
+  }
+  .menu .p-abs .menu__bar > a:hover,
+  .menu .p-abs .dropdown:hover {
+    box-shadow: none !important;
+  }
+  .menu .p-abs button:focus {
+    box-shadow: none;
+  }
+}
+
+.home-details .amt-card {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.home-details .amt-card .act-type {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.home-details .amt-card .amt {
+  font-size: 28px;
+}
+
+.home-details .amt-card .naira,
+.home-details .amt-card .kobo {
+  position: relative;
+}
+
+.home-details .amt-card .naira {
+  top: -3px;
+}
+
+.home-details .amt-card .kobo {
+  bottom: -5px;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.announcement .ring {
+  width: 25px;
+  height: 25px;
+  border: 3px solid #008080;
+}
+
+/***********************
+
+    TRANSACTION
+
+************************/
+.transaction .day__name {
+  font-size: 12px;
+}
+
+.transaction .w-45 {
+  width: 45px;
+}
+
+.transaction .circle {
+  width: 20px;
+  height: 20px;
+}
+
+.transaction .bb {
+  width: calc(100% - 45px);
+}
+
+.transaction .box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 20px solid #219653;
+}
+
+/***********************
+
+    SAVINGS
+
+************************/
+.savings .box {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 15px solid #008080;
+}
+
+.savings .info span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/***********************
+
+    HOME DETAILS
+
+************************/
+.investment .box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.investment .box-green {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 160px;
+}
+
+.investment .lh {
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+
+.investment .medal,
+.investment .day {
+  font-size: 14px;
+}
+
+.investment .measuremt {
+  font-size: 28px;
+}
+
+.investment .card {
+  width: 250px;
+}
+
+@media screen and (min-width: 530px) {
+  .investment .card {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 567px) {
+  .investment .card {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .investment .card {
+    width: 230px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .investment .card {
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .investment .card {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .investment .card {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .investment .card {
+    width: 320px;
+  }
+}
+
+.investment a.bg-dark-green:hover {
+  background: #219653;
+  color: #fff !important;
+}

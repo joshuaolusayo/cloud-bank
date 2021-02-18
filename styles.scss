@@ -1,0 +1,330 @@
+$red: #db261b;
+$green: #219653;
+$black: #333333;
+$dark-green: #008080;
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: #e5e5e5;
+	color: $black;
+}
+
+/***********************
+
+    GENERAL SETUP
+
+************************/
+
+.container {
+	@media screen and (min-width: 1440px) {
+		max-width: 1250px !important;
+	}
+
+	@media screen and (min-width: 1920px) {
+		max-width: 1700px !important;
+	}
+
+	@media screen and (min-width: 2300px) {
+		max-width: 2100px !important;
+	}
+}
+
+.txt-blaq {
+	color: $black;
+}
+
+.bg-blaq {
+	background: $black;
+}
+
+.txt-green {
+	color: $green;
+}
+
+.bg-green {
+	background: $green;
+}
+
+.bg-dark-green {
+	background: $dark-green;
+
+    
+}
+
+.txt-red {
+	color: $red;
+}
+
+.bg-red {
+	background: $red;
+}
+
+.txt-blue {
+	color: #2f80ed;
+}
+
+.link-dark {
+	color: $black;
+
+	&:hover {
+		text-decoration: none;
+		color: $dark-green;
+	}
+}
+
+/***********************
+
+    HEADER
+
+************************/
+
+.header {
+	background: white;
+
+	.navbar-brand {
+		img {
+			height: 50px;
+		}
+
+		.ri-logo {
+			width: 50px;
+		}
+	}
+}
+
+/***********************
+
+    MENU
+
+************************/
+.menu {
+	position: relative;
+
+	a {
+		&:hover {
+			text-decoration: none;
+			color: $black;
+		}
+	}
+
+	.menu__bar > a.active {
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+		border-radius: 10px;
+		background: #fff;
+	}
+
+	.menu__bar > a,
+	.dropdown {
+		&:hover,
+		&:focus {
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+			border-radius: 10px;
+			background: #fff;
+		}
+	}
+
+	.dropdown-toggle:focus {
+		box-shadow: none;
+	}
+
+	.abs {
+		position: fixed;
+		left: 0;
+		z-index: 10;
+		top: 82px;
+	}
+
+	@media screen and (max-width: 991px) {
+		.p-abs {
+			position: fixed;
+			height: 100vh;
+			width: 100%;
+			left: 0;
+			top: 0px;
+			z-index: 5;
+			overflow: hidden;
+			background: #fff;
+			padding: 20px 0;
+
+			.menu__bar > a,
+			.dropdown {
+				&:hover {
+					box-shadow: none !important;
+				}
+			}
+
+			button:focus {
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.home-details {
+	.amt-card {
+		width: 100%;
+		border-radius: 10px;
+
+		.act-type {
+			font-size: 16px;
+			font-weight: lighter;
+		}
+
+		.amt {
+			font-size: 28px;
+		}
+
+		.naira,
+		.kobo {
+			position: relative;
+		}
+
+		.naira {
+			top: -3px;
+		}
+
+		.kobo {
+			bottom: -5px;
+		}
+	}
+}
+
+.lighter {
+	font-weight: lighter;
+}
+
+.announcement {
+	.ring {
+		width: 25px;
+		height: 25px;
+		border: 3px solid $dark-green;
+	}
+}
+
+/***********************
+
+    TRANSACTION
+
+************************/
+.transaction {
+	.day__name {
+		font-size: 12px;
+	}
+
+	.w-45 {
+		width: 45px;
+	}
+
+	.circle {
+		width: 20px;
+		height: 20px;
+	}
+
+	.bb {
+		width: calc(100% - 45px);
+	}
+
+	.box {
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		border: 20px solid $green;
+	}
+}
+
+/***********************
+
+    SAVINGS
+
+************************/
+.savings {
+	.box {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+		border: 15px solid $dark-green;
+	}
+
+	.info {
+		span {
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			display: inline-block;
+		}
+	}
+}
+
+/***********************
+
+    HOME DETAILS
+
+************************/
+
+.investment {
+	.box {
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+
+		&-green {
+			background-repeat: no-repeat !important;
+			background-size: cover !important;
+			height: 160px;
+		}
+	}
+
+	.lh {
+		font-size: 14px;
+		line-height: 14px;
+		text-align: center;
+	}
+
+	.medal,
+	.day {
+		font-size: 14px;
+	}
+
+	.measuremt {
+		font-size: 28px;
+	}
+
+	.card {
+		width: 250px;
+
+		@media screen and (min-width: 530px) {
+			width: 280px;
+		}
+
+		@media screen and (min-width: 567px) {
+			width: 250px;
+		}
+
+		@media screen and (min-width: 768px) {
+			width: 230px;
+		}
+
+		@media screen and (min-width: 1200px) {
+			width: 260px;
+		}
+
+		@media screen and (min-width: 1440px) {
+			width: 280px;
+		}
+
+		@media screen and (min-width: 1920px) {
+			width: 320px;
+		}
+
+		@media screen and (min-width: 2300px) {
+			width: 320px;
+		}
+	}
+
+    a.bg-dark-green {
+        &:hover {
+            background: $green;
+            color: #fff !important;
+        }
+    }
+}
