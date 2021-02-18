@@ -31,7 +31,7 @@ const Header = () => {
 						</li>
 						<li className="nav-item">
 							<Link className="nav-link py-3 d-flex align-items-center" to="/">
-								<img src="/assets/intersect.png" alt="Profile" />
+								<img className="profile rounded-circle" src="/assets/profile.jpeg" alt="Profile" />
 								<span className="ml-2 d-none d-md-block">Ezekwesili Obinna</span>
 							</Link>
 						</li>

@@ -26,8 +26,8 @@ const Details = () => {
 				</div>
 				<div className="row">
 					<div className="cards d-flex flex-wrap justify-content-center justify-content-sm-between align-items-sm-stretch">
-						<Fade>
-							<div className="bg-white card mb-4 rounded">
+						<div className="bg-white card mb-4 rounded">
+							<Fade triggerOnce={true}>
 								<div
 									className="box-green text-light d-flex flex-column justify-content-center align-items-center pt-4 pb-5"
 									style={{ background: `url("/assets/green_bg.svg")` }}
@@ -38,6 +38,8 @@ const Details = () => {
 									</h4>
 									<p className="day">30 days</p>
 								</div>
+							</Fade>
+							<Fade triggerOnce={true}>
 								<div className="pb-3">
 									<p className="text-muted lh">
 										<span>
@@ -87,10 +89,10 @@ const Details = () => {
 										Make Investment
 									</Link>
 								</div>
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-white card mb-4 rounded">
+							</Fade>
+						</div>
+						<div className="bg-white card mb-4 rounded">
+							<Fade triggerOnce={true}>
 								<div
 									className="box-green text-light d-flex flex-column justify-content-center align-items-center pt-4 pb-5"
 									style={{ background: `url("/assets/green_bg.svg")` }}
@@ -101,6 +103,8 @@ const Details = () => {
 									</h4>
 									<p className="day">30 days</p>
 								</div>
+							</Fade>
+							<Fade triggerOnce={true}>
 								<div className="pb-3">
 									<p className="text-muted lh">
 										<span>
@@ -150,10 +154,10 @@ const Details = () => {
 										Make Investment
 									</Link>
 								</div>
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-white card mb-4 rounded">
+							</Fade>
+						</div>
+						<div className="bg-white card mb-4 rounded">
+							<Fade triggerOnce={true}>
 								<div
 									className="box-green text-light d-flex flex-column justify-content-center align-items-center pt-4 pb-5"
 									style={{ background: `url("/assets/green_bg.svg")` }}
@@ -164,6 +168,8 @@ const Details = () => {
 									</h4>
 									<p className="day">30 days</p>
 								</div>
+							</Fade>
+							<Fade triggerOnce={true}>
 								<div className="pb-3">
 									<p className="text-muted lh">
 										<span>
@@ -213,10 +219,10 @@ const Details = () => {
 										Make Investment
 									</Link>
 								</div>
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-white card mb-4 rounded">
+							</Fade>
+						</div>
+						<div className="bg-white card mb-4 rounded">
+							<Fade triggerOnce={true}>
 								<div
 									className="box-green text-light d-flex flex-column justify-content-center align-items-center pt-4 pb-5"
 									style={{ background: `url("/assets/green_bg.svg")` }}
@@ -227,6 +233,8 @@ const Details = () => {
 									</h4>
 									<p className="day">30 days</p>
 								</div>
+							</Fade>
+							<Fade triggerOnce={true}>
 								<div className="pb-3">
 									<p className="text-muted lh">
 										<span>
@@ -276,10 +284,10 @@ const Details = () => {
 										Make Investment
 									</Link>
 								</div>
-							</div>
-						</Fade>
-						<Fade>
-							<div className="bg-white card mb-4 rounded">
+							</Fade>
+						</div>
+						<div className="bg-white card mb-4 rounded">
+							<Fade triggerOnce={true}>
 								<div
 									className="box-green text-light d-flex flex-column justify-content-center align-items-center pt-4 pb-5"
 									style={{ background: `url("/assets/green_bg.svg")` }}
@@ -290,6 +298,8 @@ const Details = () => {
 									</h4>
 									<p className="day">30 days</p>
 								</div>
+							</Fade>
+							<Fade triggerOnce={true}>
 								<div className="pb-3">
 									<p className="text-muted lh">
 										<span>
@@ -339,8 +349,8 @@ const Details = () => {
 										Make Investment
 									</Link>
 								</div>
-							</div>
-						</Fade>
+							</Fade>
+						</div>
 					</div>
 				</div>
 			</div>
