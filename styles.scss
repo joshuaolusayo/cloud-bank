@@ -47,8 +47,6 @@ body {
 
 .bg-dark-green {
 	background: $dark-green;
-
-    
 }
 
 .txt-red {
@@ -161,6 +159,8 @@ body {
 }
 
 .home-details {
+    overflow-x: hidden;
+    
 	.amt-card {
 		width: 100%;
 		border-radius: 10px;
@@ -227,8 +227,6 @@ body {
 	.box {
 		width: 150px;
 		height: 150px;
-		border-radius: 50%;
-		border: 20px solid $green;
 	}
 }
 
@@ -241,8 +239,13 @@ body {
 	.box {
 		width: 200px;
 		height: 200px;
-		border-radius: 50%;
-		border: 15px solid $dark-green;
+		position: relative;
+
+		.abs {
+			position: absolute;
+			width: 200px;
+			height: 200px;
+		}
 	}
 
 	.info {
@@ -321,10 +324,10 @@ body {
 		}
 	}
 
-    a.bg-dark-green {
-        &:hover {
-            background: $green;
-            color: #fff !important;
-        }
-    }
+	a.bg-dark-green {
+		&:hover {
+			background: $green;
+			color: #fff !important;
+		}
+	}
 }

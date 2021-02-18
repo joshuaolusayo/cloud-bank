@@ -30,7 +30,7 @@ const Header = () => {
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link className="nav-link py-3 d-flex align-items-center" to="/blog">
+							<Link className="nav-link py-3 d-flex align-items-center" to="/">
 								<img src="/assets/intersect.png" alt="Profile" />
 								<span className="ml-2 d-none d-md-block">Ezekwesili Obinna</span>
 							</Link>

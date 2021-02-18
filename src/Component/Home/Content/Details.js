@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Doughnut } from "react-chartjs-2";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Details = () => {
 	return (
@@ -8,49 +10,62 @@ const Details = () => {
 			<p className="text-muted">Good morning, it's a good day to save 😙</p>
 			<div className="container d-flex flex-wrap justify-content-between px-0 px-lg-3">
 				<div className="amt-card p-4 bg-white mb-4 d-flex flex-column justify-content-center align-items-start col-lg-4 ml-lg-n3">
-					<p className="text-uppercase act-type mb-0">savings account</p>
-					<div className="amt">
-						<small className="txt-green">#</small> 2,900.00
-					</div>
+					<Fade triggerOnce={true}>
+						<p className="text-uppercase act-type mb-0">savings account</p>
+						<div className="amt">
+							<small className="txt-green">#</small> 2,900.00
+						</div>
+					</Fade>
 				</div>
+
 				<div className="amt-card p-4 bg-white mb-4 d-flex flex-column justify-content-center align-items-start col-lg-4">
-					<p className="text-uppercase act-type mb-0">savings account</p>
-					<div className="amt">
-						<small className="txt-green">#</small> 2,900.00
-					</div>
+					<Fade triggerOnce={true}>
+						<p className="text-uppercase act-type mb-0">savings account</p>
+						<div className="amt">
+							<small className="txt-green">#</small> 2,900.00
+						</div>
+					</Fade>
 				</div>
 				<div className="amt-card p-4 bg-white mb-4 col-lg-4 mr-lg-n3">
-					<div className="top d-flex justify-content-between lighter">
-						<span>Investment</span>
-						<span className="txt-blue">0229238715</span>
-					</div>
-					<div className="mid d-flex justify-content-center align-items-center my-3">
-						<span className="naira text-green">#</span>
-						<span className="amt">10,000</span>
-						<span className="kobo">.98</span>
-					</div>
-					<div className="top d-flex justify-content-between lighter">
-						<span className="txt-blue">8.18%</span>
-						<span>29/09/2020</span>
-					</div>
+					<Fade triggerOnce={true}>
+						<div className="top d-flex justify-content-between lighter">
+							<span>Investment</span>
+							<span className="txt-blue">0229238715</span>
+						</div>
+						<div className="mid d-flex justify-content-center align-items-center my-3">
+							<span className="naira text-green">#</span>
+							<span className="amt">10,000</span>
+							<span className="kobo">.98</span>
+						</div>
+						<div className="top d-flex justify-content-between lighter">
+							<span className="txt-blue">8.18%</span>
+							<span>29/09/2020</span>
+						</div>
+					</Fade>
 				</div>
 			</div>
 
 			<div className="announcement mb-5">
 				<h4 className="mt-4 mb-3">Announcement</h4>
 				<div>
-					<div className="bg-white p-3 rounded d-flex align-items-center mb-3">
-						<span className="ring d-inline-block rounded-circle"></span>
-						<span className="ml-3">Finish your KYC</span>
-					</div>
-					<div className="bg-white p-3 rounded d-flex align-items-center mb-3">
-						<span className="ring d-inline-block rounded-circle"></span>
-						<span className="ml-3">Follow us on our social media platforms</span>
-					</div>
-					<div className="bg-white p-3 rounded d-flex align-items-center mb-3">
-						<span className="ring d-inline-block rounded-circle"></span>
-						<span className="ml-3">Request for a CloudBank mastercard</span>
-					</div>
+					<Slide triggerOnce={true}>
+						<div className="bg-white p-3 rounded d-flex align-items-center mb-3">
+							<span className="ring d-inline-block rounded-circle"></span>
+							<span className="ml-3">Finish your KYC</span>
+						</div>
+					</Slide>
+					<Slide triggerOnce={true}>
+						<div className="bg-white p-3 rounded d-flex align-items-center mb-3">
+							<span className="ring d-inline-block rounded-circle"></span>
+							<span className="ml-3">Follow us on our social media platforms</span>
+						</div>
+					</Slide>
+					<Slide triggerOnce={true}>
+						<div className="bg-white p-3 rounded d-flex align-items-center mb-3">
+							<span className="ring d-inline-block rounded-circle"></span>
+							<span className="ml-3">Request for a CloudBank mastercard</span>
+						</div>
+					</Slide>
 				</div>
 			</div>
 
@@ -116,17 +131,31 @@ const Details = () => {
 							<h6>Breakdown</h6>
 							<div className="form-group">
 								<select className="form-control" name="day" id="day">
-									<option>Yesteday</option>
+									<option>Yesterday</option>
 									<option>Today</option>
 								</select>
 							</div>
 						</div>
-						<div className="box mx-auto mb-4"></div>
-						<div>
+						<div className="box mx-auto mb-4">
+							<Doughnut
+								data={{
+									datasets: [
+										{
+											data: [80, 20],
+											backgroundColor: ["green", "red"],
+										},
+									],
+								}}
+								width={150}
+								height={150}
+								options={{ maintainAspectRatio: false, cutoutPercentage: 80 }}
+							/>
+						</div>
+						<div className="text-center text-lg-left">
 							<p className="mb-0">Total Money Received</p>
 							<p className="txt-green">#2,000.00</p>
 						</div>
-						<div>
+						<div className="text-center text-lg-left">
 							<p className="mb-0">Total Money Spent</p>
 							<p className="txt-red">#900.00</p>
 						</div>
@@ -134,44 +163,64 @@ const Details = () => {
 				</div>
 			</div>
 
-			<div className="savings">
-				<div className="container mx-auto jumbotron bg-white d-md-flex justify-content-md-between">
-					<div className="col-md-6">
-						<div className="box mx-auto mb-4 d-flex flex-column justify-content-center align-items-center text-center">
-							<h6 className="lighter">TOTAL</h6>
-							<h3 className="font-weight-bold">#2909.98</h3>
-						</div>
-						<div className="info">
-							<div className="d-flex flex-wrap justify-content-between align-items-center">
-								<div className="d-flex justify-content-center align-items-center my-2">
-									<span className="bg-green mr-2"></span> Savings
+			<Slide triggerOnce={true}>
+				<div className="savings">
+					<div className="container mx-auto jumbotron bg-white d-md-flex justify-content-md-between">
+						<div className="col-md-6">
+							<div className="box mx-auto mb-4 d-flex flex-column justify-content-center align-items-center text-center">
+								<Doughnut
+									data={{
+										datasets: [
+											{
+												data: [90, 20],
+												backgroundColor: ["green", "gray"],
+											},
+										],
+									}}
+									width={200}
+									height={200}
+									options={{
+										maintainAspectRatio: false,
+										cutoutPercentage: 80,
+									}}
+								/>
+								<div className="abs d-flex flex-column justify-content-center align-items-center">
+									<h6 className="lighter">TOTAL</h6>
+									<h3 className="font-weight-bold">#2909.98</h3>
 								</div>
-								<div className="d-flex justify-content-center align-items-center my-2">
-									<span className="bg-red mr-2"></span> Business
-								</div>
-								<div className="d-flex justify-content-center align-items-center my-2">
-									<span className="bg-secondary mr-2"></span> Investment
+							</div>
+							<div className="info">
+								<div className="d-flex flex-wrap justify-content-between align-items-center">
+									<div className="d-flex justify-content-center align-items-center my-2">
+										<span className="bg-green mr-2"></span> Savings
+									</div>
+									<div className="d-flex justify-content-center align-items-center my-2">
+										<span className="bg-red mr-2"></span> Business
+									</div>
+									<div className="d-flex justify-content-center align-items-center my-2">
+										<span className="bg-secondary mr-2"></span> Investment
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div className="col-md-6 py-5 py-md-autp">
-						<div className="mb-3">
-							<h5 className="price">Savings</h5>
-							<p className="txt-green">#2900.00</p>
-						</div>
-						<div className="mb-3">
-							<h5 className="price">Business</h5>
-							<p className="txt-green">#0.00</p>
-						</div>
-						<div className="mb-3">
-							<h5 className="price">Investment</h5>
-							<p className="txt-green">#9.98</p>
+						<div className="col-md-6 py-5 py-md-autp">
+							<div className="mb-3">
+								<h5 className="price">Savings</h5>
+								<p className="txt-green">#2900.00</p>
+							</div>
+							<div className="mb-3">
+								<h5 className="price">Business</h5>
+								<p className="txt-green">#0.00</p>
+							</div>
+							<div className="mb-3">
+								<h5 className="price">Investment</h5>
+								<p className="txt-green">#9.98</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</Slide>
 		</div>
 	);
 };

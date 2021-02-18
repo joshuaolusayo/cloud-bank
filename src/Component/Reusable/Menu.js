@@ -146,7 +146,7 @@ const Menu = () => {
 					<span className="col-10 col-lg-9">Investment</span>
 				</Link>
 
-				<div className="dropdown `mb-lg-4` txt-blaq w-100 text-left py-3 rounded">
+				<div className="dropdown mb-lg-4 txt-blaq w-100 text-left py-3 rounded">
 					<button
 						className="btn px-0 dropdown-toggle d-block w-100 text-left py-0"
 						type="button"

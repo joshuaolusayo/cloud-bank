@@ -145,6 +145,10 @@ body {
   }
 }
 
+.home-details {
+  overflow-x: hidden;
+}
+
 .home-details .amt-card {
   width: 100%;
   border-radius: 10px;
@@ -207,8 +211,6 @@ body {
 .transaction .box {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 20px solid #219653;
 }
 
 /***********************
@@ -219,8 +221,13 @@ body {
 .savings .box {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  border: 15px solid #008080;
+  position: relative;
+}
+
+.savings .box .abs {
+  position: absolute;
+  width: 200px;
+  height: 200px;
 }
 
 .savings .info span {
